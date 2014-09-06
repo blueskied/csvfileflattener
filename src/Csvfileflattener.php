@@ -38,7 +38,9 @@ class Csvfileflattener
 	{
 		if ( ! self::$_instance)
 		{
-			self::$_instance = new self();
+			// Need to use this function to make available for subclass
+			$class = get_called_class();
+			self::$_instance = new $class();
 		}
 		
 		return self::$_instance;
