@@ -1,0 +1,20 @@
+{
+    "name": "blueskied/csvfielflattener",
+    "description": "Import and export flattened CSV files with ease!",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":  "Alex Brims",
+            "email": "alex.brims@gmail.com",
+            "role":  "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Csvfileflattener\\": "src"
+        }
+    },
+    "require": {
+        "stilliard/csvparser": "dev-master"
+    }
+}
